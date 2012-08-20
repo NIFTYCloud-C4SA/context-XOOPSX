@@ -126,6 +126,7 @@ class setting_manager {
 
     function readConstant(){
 		//NIFTY Cloud C4SA用の変更ポイント
+		//環境変数の読み込み
 		define('XOOPS_DB_TYPE', 'mysql');
 		define('XOOPS_DB_NAME', getenv('C4SA_MYSQL_DB'));
 		define('XOOPS_DB_USER', getenv('C4SA_MYSQL_USER'));

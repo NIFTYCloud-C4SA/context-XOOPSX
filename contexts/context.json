@@ -2,10 +2,10 @@
     "name": "xoops_x_1.03",
         "version": "1.03",
         "category": { "language": "application", "framework": "xoops_x", "priority": 0 },
-        "ui-name": "XOOPS X",
+        "ui-name": "XOOPS\sX",
         "ui-summary": "xoops_x_v1.03",
-        "description": "XOOPS X(ズープステン)は、オープンソースのブログ/CMS プラットフォームです。C4SAのコンテクスト機能を利用することで、簡単に設置することができます。 設置後、XOOPS Xの設定を行って下さい。",
-        "description-url": null,
+        "description": "XOOPS\sX(ズープステン)は、オープンソースのブログ/CMSプラットフォームです。C4SAのコンテクスト機能を利用することで、簡単に設置することができます。 設置後、XOOPS Xの設定を行って下さい。",
+        "description-url": "http://www.xoopscube.net/",
         "parameters": {
             "mysql_password": { "type": "string",
                 "restr": "[0-9A-Za-z]{8,16}",
