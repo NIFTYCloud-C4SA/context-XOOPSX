@@ -1,4 +1,4 @@
-context-XOOPSCube
+context-XOOPSX
 =================
 
-XOOPS Cube for ニフティクラウドC4SA(NIFTYCloud C4SA) 
+XOOPS X(ten) for ニフティクラウドC4SA(NIFTYCloud C4SA) 
