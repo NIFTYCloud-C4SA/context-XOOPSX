@@ -15,7 +15,7 @@ URL_REPO="https://github.com/XoopsX/legacy.git"
 URL_ARCHIVE="https://github.com/NIFTYCloud-C4SA/context-XOOPSX/zipball/master"
 
 ## make context
-${BIN_CD} ./contexts/krm
+${BIN_CD} ./contexts/krm/
 ${BIN_GIT} clone ${URL_REPO} ./xoopsx
 ${BIN_MV} ./xoopsx/* ./
 ${BIN_MV} ./html ./public_html
