@@ -1,9 +1,9 @@
 {
-    "name": "xoops_x_1.03",
-        "version": "1.03",
-        "category": { "language": "application", "framework": "xoops_x", "priority": 0 },
-        "ui-name": "XOOPS\sX",
-        "ui-summary": "xoops_x_v1.03",
+    "name": "xoopsx_1.0",
+        "version": "1.0",
+        "category": { "language": "application", "framework": "xoopsx", "priority": 0 },
+        "ui-name": "XOOPSX",
+        "ui-summary": "xoopsx_v1",
         "description": "XOOPS\sX(ズープステン)は、オープンソースのブログ/CMSプラットフォームです。C4SAのコンテクスト機能を利用することで、簡単に設置することができます。 設置後、XOOPS Xの設定を行って下さい。",
         "description-url": "http://www.xoopscube.net/",
         "parameters": {
