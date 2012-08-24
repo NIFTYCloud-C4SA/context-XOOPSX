@@ -2,27 +2,30 @@
 
 ## XOOPS Xコンテクスト作成シェルスクリプト
 
+BIN_CD="cd"
 BIN_CURL="/usr/bin/curl -L"
+BIN_GIT="/usr/bin/git"
 BIN_MV="/bin/mv"
 BIN_RM="/bin/rm -rf"
 BIN_TAR="/usr/bin/tar"
-BIN_CD="cd"
+BIN_UNZIP="/usr/bin/unzip"
+BIN_MKDIR="/bin/mkdir"
 
-#URL_ARCHIVE="http://sourceforge.jp/projects/xoopscube22x/downloads/55285/xoopsx-103-2.tar.gz"
-URL_ARCHIVE="http://sourceforge.jp/frs/redir.php?m=osdn&f=%2Fxoopscube22x%2F55285%2Fxoopsx-103-2.tar.gz"
+URL_REPO="https://github.com/XoopsX/legacy.git"
+URL_ARCHIVE="https://github.com/NIFTYCloud-C4SA/context-XOOPSX/zipball/master"
 
 ## make context
-${BIN_CD} ./contexts/krm/
-${BIN_CURL} -o ./xoopsx.tar.gz ${URL_ARCHIVE}
-${BIN_TAR} zxvf ./xoopsx.tar.gz
-${BIN_MV} html public_html
-${BIN_MV} public_html/install/class/settingmanager.php public_html/install/class/settingmanager_org.php
-${BIN_MV} settingmanager.php public_html/install/class/settingmanager.php
-${BIN_RM} xoopsx.tar.gz
+${BIN_CD} ./contexts/krm
+${BIN_GIT} clone ${URL_REPO} ./xoopsx
+${BIN_MV} ./xoopsx/* ./
+${BIN_MV} ./html ./public_html
+${BIN_RM} ./xoopsx
+${BIN_MV} ./public_html/install/class/settingmanager.php ./public_html/install/class/settingmanager_org.php
+${BIN_MV} ./settingmanager.php ./public_html/install/class/settingmanager.php
 
 ## create archive
-${BIN_TAR} czpf ./web_root.tar.gz {public_html,xoops_trust_path,docs,extras}
-${BIN_RM} ./{public_html,xoops_trust_path,docs,extras}
+${BIN_TAR} czpf ./web_root.tar.gz {public_html,xoops_trust_path,docs,extras,README.md}
+${BIN_RM} ./{public_html,xoops_trust_path,docs,extras,README.md}
 ${BIN_CD} ../
 ${BIN_TAR} czpf ./krm.tar.gz ./krm/*
 
